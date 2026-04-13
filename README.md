@@ -21,17 +21,34 @@ Generación de tablas de resultados formateadas en consola.
 
 ### 2️⃣ Productor Kafka
 Archivo: `kafka_productor.py`
-###  Tareas Realizadas:
+#### Tareas Realizadas:
 - Lee el dataset procesado
 - Simula flujo de datos en tiempo real
 - Envía datos al tópico Kafka `sensor_data`
 
 ### 3️⃣ Procesamiento en Streaming
 Archivo: `spark_streaming.py`
-###  Tareas Realizadas:
+####  Tareas Realizadas:
 - Consume datos desde Kafka
 - Procesa datos en tiempo real
 - Calcula:
   - Número de reportes por municipio
   - Promedio de sedes educativas
 - Muestra resultados en consola
+
+
+## ▶️ Ejecución del Proyecto:
+
+### Paso 1: Ejecutar procesamiento batch
+python tarea_3_ivan_beltran.py
+
+### Paso 2: Iniciar Kafka
+Asegúrate de tener Kafka
+
+### Paso 3: Ejecutar productor Kafka
+python kafka_productor.py
+
+### Paso 4: Ejecutar streaming con Spark
+spark-submit spark_streaming.py
+
+Ejecuta el comando `pip install requests`
