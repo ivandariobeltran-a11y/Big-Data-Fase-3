@@ -39,16 +39,14 @@ Archivo: `spark_streaming.py`
 
 ## ▶️ Ejecución del Proyecto:
 
-### Paso 1: Ejecutar procesamiento batch
-python tarea_3_ivan_beltran.py
+### Paso 1: Ejecutar procesamiento batch: 
+`python tarea_3_ivan_beltran.py`
 
-### Paso 2: Iniciar Kafka
+### Paso 2: Iniciar Kafka:
 Asegúrate de tener Kafka
 
-### Paso 3: Ejecutar productor Kafka
-python kafka_productor.py
+### Paso 3: Ejecutar productor Kafka:
+`python kafka_productor.py`
 
-### Paso 4: Ejecutar streaming con Spark
-spark-submit spark_streaming.py
-
-Ejecuta el comando `pip install requests`
+### Paso 4: Ejecutar streaming con Spark:
+`spark-submit spark_streaming.py`
